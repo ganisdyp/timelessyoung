@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'CSChatThai';
+  font-style: normal;
+  font-weight: normal;
+  src: url('CSChatThaiUI/CSChatThaiUI.woff2') format('woff2'), url('../fonts/CSChatThaiUI/CSChatThaiUI.ttf') format('truetype');
+  unicode-range: U+0E01-0E5B, U+200B-200D, U+25CC;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Prompt Light'), local('Prompt-Light'), url('prompt/prompt-thai.woff2') format('woff2');
+  unicode-range: U+0E01-0E5B, U+200B-200D, U+25CC;
+  letter-spacing: -1px;
+}
+
+.font-chatthai {
+  /* font-family: 'CSChatThai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
+  font-family: 'sans-serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: unset;
+  letter-spacing: 0px;
+  line-height: 1.6 !important;
+}
+
+.font-prompt {
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.fa.with-text {
+  font-size: 12pt;
+}
