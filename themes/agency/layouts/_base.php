@@ -14,6 +14,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@dixonsatit/agencyTh
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
+
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">

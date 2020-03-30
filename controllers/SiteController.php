@@ -7,8 +7,10 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
+use app\components\TimelessyoungRule;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\User;
 
 class SiteController extends Controller
 {
@@ -20,12 +22,32 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout','menu'],
+/*'only' => ['logout','menu','blog-category','blog-view'],*/
+                'ruleConfig' => [
+                    'class' => TimelessyoungRule::className(),
+                ],
                 'rules' => [
                     [
                         'actions' => ['logout'],
                         'allow' => true,
                         'roles' => ['@'],
+                    ],
+                /*    [
+                        'actions' => ['blog-category', 'blog-view'],
+                        'allow' => true,
+                        // Allow plant admin, moderators and admins to create
+                        'roles' => [
+                            User::ROLE_CUSTOMER, User::ROLE_ADMIN
+                        ],
+                    ], */
+                    [
+                        'actions' => ['menu'],
+                        'allow' => true,
+                        // Allow plant admin, moderators and admins to create
+                        'roles' => [
+                           User::ROLE_ADMIN
+                        ],
                     ],
                 ],
             ],
@@ -121,9 +143,9 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionMenu()
     {
-        return $this->render('about');
+        return $this->render('menu');
     }
 
     /**

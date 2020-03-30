@@ -87,7 +87,7 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                     <img src="image/portfolio/06-lifestyle.jpg" class="img-responsive" alt="">
+                     <img src="image/portfolio/06-lifestyle.jpg" class="img-responsive" alt=""> 
                 </a>
                 <div class="portfolio-caption">
                     <h4>เวิร์คสไตล์ & ไลฟ์สไตล์</h4>
