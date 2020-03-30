@@ -21,6 +21,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@dixonsatit/agencyTh
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
 </head>
 <body id="page-top" class="index">
 <?php $this->beginBody() ?>

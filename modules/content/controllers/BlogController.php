@@ -140,6 +140,8 @@ class BlogController extends Controller
                     /* $model->main_photo = $file->baseName . '.' . $file->extension;
                      $file->saveAs('uploads/blog/' . $file->baseName . '.' . $file->extension);*/
                 }
+                $model->headline = $model->headline_th;
+                $model->description = $model->description_th;
                 $model->save();
                 //  print_r($model);
                 if (Model::validateMultiple($modelDetails)) {
@@ -246,6 +248,8 @@ class BlogController extends Controller
                     /*  $model->main_photo = $file->baseName . '.' . $file->extension;
                       $file->saveAs('uploads/blog/' . $file->baseName . '.' . $file->extension);*/
                 }
+                $model->headline = $model->headline_th;
+                $model->description = $model->description_th;
                 $model->save();
                 foreach ($modelDetails as $c => $modelDetail) {
                     //details that has been flagged for deletion will be deleted

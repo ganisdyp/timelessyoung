@@ -49,7 +49,7 @@ class AppAsset extends AssetBundle
         'lib/fonts/font-prompt.css',
         'css/style.css',
         'css/custom.css',
-
+'lib/bootstrap-toggle/css/bootstrap-toggle.min.css'
 
     ];
     public $js = [
@@ -74,6 +74,7 @@ class AppAsset extends AssetBundle
         //  'js/jquery-3.2.1.min.js',
         'js/system.js',
         'js/main.js',
+        'lib/bootstrap-toggle/js/bootstrap-toggle.min.js'
 
     ];
     public $depends = [

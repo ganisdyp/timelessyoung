@@ -43,7 +43,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //  'id',
             'headline',
+            [
+                'attribute' => 'description',
+                "format" => 'html',
+                'value' => function ($model) {
+                                       return $model->description;
 
+                },
+            ],
             [
                 'attribute' => 'blogType.name',
                 'value' => function ($model) {
